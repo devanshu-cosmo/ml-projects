@@ -1,37 +1,39 @@
-Stock Return Prediction Using Gaussian Processes and PCA
-Overview
-This notebook contains a comprehensive Jupyter notebook that explores advanced supervised learning techniques for predicting stock returns, focusing on Gaussian Process (GP) regression and Principal Component Analysis (PCA)-enhanced GP modeling. The aim is to provide robust, interpretable, and uncertainty-aware return predictions leveraging both market technical indicators and macroeconomic data.
+# Stock Return Prediction Using Gaussian Processes and PCA
 
-Objectives
-Implement Gaussian Process regression to model and predict the daily returns of Microsoft (MSFT) stock.
+---
 
-Incorporate PCA for dimensionality reduction of financial features, improving stability and interpretability of the GP model.
+## Overview
 
-Evaluate and compare the predictive accuracy of GP versus PCA+GP models using appropriate error and goodness-of-fit metrics.
+This notebook contains a comprehensive Jupyter notebook exploring advanced supervised learning techniques for predicting stock returns, focusing on **Gaussian Process (GP) regression** and **Principal Component Analysis (PCA)**-enhanced GP modeling. The goal is to provide robust, interpretable, and uncertainty-aware return predictions leveraging both market technical indicators and macroeconomic data.
 
-Visually analyze model predictions with associated confidence intervals to assess uncertainty.
+---
 
-Conduct in-depth PCA analysis, including explained variance, component loadings, and feature correlation structure.
+## Objectives
 
-Provide backtesting methods (included within the notebook) to assess the practical trading performance of the developed predictive models.
+- Implement **Gaussian Process regression** to model and predict daily returns of Microsoft (MSFT) stock.
+- Use **PCA for dimensionality reduction** of financial features to improve model stability and interpretability.
+- Evaluate and compare predictive accuracy of the **GP vs PCA+GP models** using error and goodness-of-fit metrics.
+- Visualize model predictions with confidence intervals to assess uncertainty.
+- Analyze PCA results including explained variance, component loadings, and feature correlation.
+- Include **backtesting methods** to assess practical trading strategy performance derived from the predictive models.
 
-Methodology & Workflow
-Data Acquisition: Retrieve historical price data for MSFT and S&P 500, supplemented by technical indicators and optional macroeconomic factors via the FRED API.
+---
 
-Feature Engineering: Calculate a rich set of features, including returns, moving averages, momentum, volatility, and lagged variables, ensuring alignment and rigorous preprocessing.
+## Methodology & Workflow
 
-Modeling: Build GP regression models using both raw and PCA-transformed features to predict next-day returns.
+1. **Data Acquisition:** Retrieve historical data for MSFT and S&P 500, including technical indicators and optional macroeconomic factors (via the FRED API).
+2. **Feature Engineering:** Compute returns, moving averages, momentum, volatility, and lagged variables, ensuring proper alignment.
+3. **Modeling:** Build GP regression models on both raw and PCA-transformed features.
+4. **Evaluation:** Quantify performance using Mean Squared Error (MSE) and R-squared (R2).
+5. **Visualization:** Present actual vs predicted returns with confidence intervals and comparative plots.
+6. **Backtesting:** Simulate trading strategies to evaluate profitability and risk.
 
-Evaluation: Quantitatively measure performance with mean squared error (MSE) and R-squared (R2) metrics, comparing raw GP and PCA-enhanced GP.
+---
 
-Visualization: Present clear plots of actual vs predicted returns, confidence intervals, comparison charts for both modeling approaches, and PCA interpretability visuals.
+## Salient Features
 
-Backtesting: Simulate trading strategies based on model signals to evaluate profitability and risk characteristics.
+- **Uncertainty quantification:** GP confidence intervals showcase prediction reliability.
+- **Flexible pipeline:** Toggle macroeconomic data inclusion and adjust PCA components easily.
+- **Backtesting framework:** Demonstrates real-world applicability of models.
 
-Salient Features
-
-Integrated uncertainty quantification via Gaussian Process confidence intervals.
-
-Flexible pipeline enabling toggling macroeconomic features and adjusting PCA components.
-
-Ready-for-use backtesting framework demonstrating real-world applicability of predictive models.
+---
