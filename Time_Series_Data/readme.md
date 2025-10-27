@@ -19,7 +19,7 @@ The model captures **intraday, weekly, and seasonal patterns**, generating a **m
     - Exogenous regressors (fuel prices, renewables, weather, demand indicators).  
     - Optional **crisis dummy** and **Fourier seasonality terms**.
   - Evaluated model via **Expanding** and **Sliding Window Backtesting** with metrics:  
-    `MAE`, `MSE`, `RMSE`, and `MAPE`.
+    `MAE`, `MSE`, and `RMSE`.
 
 - **⚙️ Preprocessing Enhancements**
   - Added **Winsorization** to handle outliers and improve model robustness.  
@@ -53,7 +53,6 @@ The model captures **intraday, weekly, and seasonal patterns**, generating a **m
 | Metric | Description | Use |
 |:------:|:-------------|:----|
 | **MAE / RMSE** | Quantifies average and squared forecast errors. | Accuracy check |
-| **MAPE** | Percent deviation from actuals. | Normalized performance |
 | **Backtesting (Expanding / Sliding)** | Evaluates model stability across time. | Robustness |
 
 ---
@@ -68,8 +67,6 @@ The model captures **intraday, weekly, and seasonal patterns**, generating a **m
 ## 📚 Author
 👤 **Devanshu Sharma**  
 _Ph.D. in Computational Physics — Time Series Modelling & Quantitative Forecasting_  
-📧 [Contact via GitHub](mailto:devanshu@example.com) | 🌐 [LinkedIn Profile](https://linkedin.com/in/devanshu-sharma)
-
 ---
 
 > ⚙️ *“The model defines the shape — the market defines the level.”*  
