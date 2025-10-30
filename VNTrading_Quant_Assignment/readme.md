@@ -31,3 +31,20 @@ A Python implementation of a simple moving average crossover trading strategy fo
 - Switch to long on buy signal (if not already long)
 - Switch to short on sell signal (if not already short)
 - Always maintain one position don't exit partially
+
+### Backtesting Engine
+- Simulated portfolio performance with $100,000 initial capital
+- Calculated period returns: `position * asset_return`
+- Built equity curve through return compounding
+- Tracked running maximum for drawdown calculation
+
+### Performance Metrics
+- **Total Return**: (Final equity - Initial capital) / Initial capital
+- **Number of Trades**: Count of position changes
+- **Maximum Drawdown**: Largest peak-to-trough decline
+- **Sharpe Ratio**: Annualized risk-adjusted returns
+
+## Results
+
+The strategy generated [X] trades with a total return of 2.6 % and maximum drawdown of 47%. 
+The equity curve shows the strategy's performance over the test period.
