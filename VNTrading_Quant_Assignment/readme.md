@@ -58,3 +58,5 @@ The output plot for the baseline SMA = 10 suggests that the returns rise steadil
 ### Update 1: Added a Grid Search feature that helps to find an optimal SMA window based on the performance metrics
 
 ### Update 2: Added a plot showing how the performance metrics vary with the variation in SMA window
+
+### Update 3: Added a function that considers non-zero transaction fees while backtesting the strategy
