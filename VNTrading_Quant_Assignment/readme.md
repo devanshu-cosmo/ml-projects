@@ -46,8 +46,9 @@ A Python implementation of a simple moving average crossover trading strategy fo
 
 ## Results
 
-The strategy generated [X] trades with a total return of 2.6 % and maximum drawdown of 47%. 
-The equity curve shows the strategy's performance over the test period.
+- The strategy generated a total return of 2.6 % and maximum drawdown of 47% for baseline SMA = 10. 
+- The equity curve shows the strategy's performance over the test period.
+- Changing the SMA window drastically affects the performance metrics
 
 ### Update 1: Added a Grid Search feature that helps to find an optimal SMA window based on the performance metrics
 
