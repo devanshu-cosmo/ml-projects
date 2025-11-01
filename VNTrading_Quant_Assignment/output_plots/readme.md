@@ -5,10 +5,8 @@ During the backtesting phase, I experimented with different window lengths for t
 
 I found:
 
-| SMA Window | Observed Performance |
-| 5 | Low returns – too many false trades due to high sensitivity |
-| 10 | Baseline performance – balanced responsiveness |
-| 15 | Lower returns – delayed reactions and premature exits |
-| 20 | Significantly higher returns – smoother signals capturing longer trends |
-
-The results suggests that the SMA window directly regulates the responsiveness of the signal to the market movements. Shorter windows respond too quickly, leading to unneccesary trades. Longer windows lead to smaller number of trades, but capture the actual trends in the chart. The results for SMA=15 is a bit unintuitive. For SMA=15, it is possible that the window is not reactive enough for short trends but also contains the noises for long term trends.
+- The performance metrics are affected by the variation in the SMA period
+- The total returns decrease gradually with an increase in the SMA period. In my understanding, this happens due to the reduced number of trades for a larger SMA period
+- The annualized Sharpe ratio is relatively less impacted by the SMA period variation. Although it also reduces with the increase in the SMA period
+- Such a behaviour of the Sharpe ratio indicates that the cumulative returns adjusted to the risk are highest for the shortest SMA window case
+- The maximum drawdown is nearly constant for all the cases of SMA. Overall, the amplitude oscillates but remains < 0.5 % all the time
