@@ -46,14 +46,14 @@ A Python implementation of a simple moving average crossover trading strategy fo
 
 ## Results
 
-- The strategy generated a total return of 2.6 % and maximum drawdown of 47% for baseline SMA = 10. 
+- The strategy generated a total return of 2.1 %, Sharpe ratio of 6 and a maximum drawdown of 2 % for baseline SMA = 10. 
 - The equity curve shows the strategy's performance over the test period.
 - Changing the SMA window drastically affects the performance metrics
 
 
 ## Interpretation
 
-The output plot for the baseline SMA = 10 suggests that the returns rise steadily at first, with occasional drawdowns. This is followed by a continous declined returns phase, implying that the volatility in the market is not being captured by the SMA signal. Moreover, the drawdown also rapidly rises, suggesting that the model is taking increasingly risky trades. The returns rise again from the global minima, and the drawdown also reduces to more balanced trades. In the last few trades, the returns are moderate but stable as the model does not take more risks and settles to a constant drawdown. The SMA window has huge effects on this trend as seen from the output plots.
+The output plot for the baseline SMA = 10 suggests that the returns rise steadily, with occasional drops. This is followed by a rather oscillatory phase and the total returns stay of the same order. Towards the final few minutes, the curve falls and rises again. Moreover, the drawdown also rises, suggesting that the model is taking increasingly risky trades. However, the overall fluctuation of the drawdown is small in amplitude and stays comfortably below 5 percent. The SMA window has significant effects on this trend, as seen from the output plots.
 
 ### Update 1: Added a Grid Search feature that helps to find an optimal SMA window based on the performance metrics
 
