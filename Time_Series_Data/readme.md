@@ -66,9 +66,5 @@ The model captures **intraday, weekly, and seasonal patterns**, generating a **m
 
 ## 📚 Author
 👤 **Devanshu Sharma**  
-_Ph.D. in Computational Physics — Time Series Modelling & Quantitative Forecasting_  
----
 
-> ⚙️ *“The model defines the shape — the market defines the level.”*  
-> A reproducible pipeline for quantitative electricity price forecasting.
 
