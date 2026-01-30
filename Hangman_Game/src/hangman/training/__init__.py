@@ -1,0 +1,2 @@
+from .presence_trainer import PresenceModelTrainer
+from .masked_trainer import MaskedLetterModelTrainer

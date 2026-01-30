@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Trained models
+src/hangman/models/*.pkl
+
+# Large dictionaries / data
+data/*.txt
+data/*.csv
+
+# OS
+.DS_Store
+
