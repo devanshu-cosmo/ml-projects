@@ -89,10 +89,32 @@ A calendar-based rebalancing engine:
 2. Solve the tangency MVO problem and update portfolio weights.
 3. Hold weights until the next rebalance and track portfolio value over time.
 
-Outputs include:
+Output:
 
 - Evolution of portfolio weights (stacked area chart).
 - Cumulative returns vs. an equal-weight buy-and-hold benchmark.
 - Rolling Sharpe ratio of the rebalanced strategy.
 
-The design makes it straightforward to swap in alternative covariance estimators or expected return models.
+## Extensions for simulating realistic portfolio optimization
+
+### Linear Programming (LP)
+- Added a formulation that **maximises expected return under linear constraints**.  
+- A simple baseline to compare against Mean-Variance Optimization.  
+- Demonstrates how portfolio decisions change when risk is ignored.
+
+### Mixed-Integer Programming (MILP)
+- **Cardinality constraints** keep the portfolio asset number constrained.  
+- Implemented using binary variables to model **asset selection decisions**.  
+- Continuous allocation becomes **selection + allocation**.
+
+### Rebalancing by including transaction costs
+- Extended the rebalancing engine to include **transaction costs via an L1 penalty on weight changes**.  
+- Reduces unnecessary trading and results in smoother portfolio evolution over time.  
+- Introduces **path dependence**, where previous allocations influence current decisions.
+
+### Compare turnover
+- Added a comparison between strategies **with and without transaction costs**.  
+- Helpful to understand how including transaction costs leads to **lower turnover and more stable portfolios**.
+
+### Capacity / Exposure Constraints
+- Added constraints to limit sector-wise exposure. 
