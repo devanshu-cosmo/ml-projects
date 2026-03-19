@@ -3,8 +3,6 @@
 This project implements a machine learning–based solver for the classic Hangman game.  
 The goal is to improve upon the standard frequency-based guessing strategy by learning how letters appear in words under different game states.
 
-The solver was developed as part of the TrexQuant Hangman challenge.
-
 ---
 
 ## Project Overview
